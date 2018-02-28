@@ -1,0 +1,36 @@
+header,
+footer {
+	color: white;
+	background-color: black;
+}
+#status {
+	font-size: 20px;
+	font-style: italic;
+}
+@media (max-width: 480px) {
+	header {
+		min-height: 100vh;
+	}
+}
+
+/*
+on peut aussi mettre les réglages pour mobile par défault (mobile first)
+puis ensuite ...
+@ media (min-width: 480px) {
+	header {
+		height: initial;
+	}
+}
+
+font awesome pour faire une grille des compétences avec les icones.
+*/
+@media print {
+	nav {
+		display: none;
+	}
+	.container {
+		border: 1px solid black;
+		width: 21cm;
+		height: 29,7cm;
+	}
+}
